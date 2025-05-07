@@ -13,7 +13,7 @@ export default defineStackbitConfig({
 				{
 					name: "Post",
 					type: "page",
-					urlPath: "/{slug}",
+					urlPath: "/blog/{slug}",
 					filePath: "content/blog/{slug}.md",
 					fields: [{ name: "title", type: "string", required: true }],
 				},
