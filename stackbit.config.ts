@@ -17,6 +17,13 @@ export default defineStackbitConfig({
 					filePath: "content/blog/{slug}.md",
 					fields: [{ name: "title", type: "string", required: true }],
 				},
+				{
+					name: "Page",
+					type: "page",
+					urlPath: "/{slug}",
+					filePath: "content/{slug}.md",
+					fields: [{ name: "title", type: "string", required: true }],
+				},
 			],
 			assetsConfig: {
 				referenceType: "static",
